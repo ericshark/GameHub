@@ -4,11 +4,8 @@ import javax.swing.JPanel;
 import javax.swing.*;
 import java.util.Random;
 
-/**
- * The {@code TicTacToe} class implements a GUI-based Tic Tac Toe game.
- * It manages the game's UI, state, and player interactions.
- */
-public class TicTacToe implements ActionListener {
+
+public class TicTacToe implements ActionListener{
 
     Random random = new Random();
     JFrame frame = new JFrame();
@@ -20,10 +17,7 @@ public class TicTacToe implements ActionListener {
     JButton[] buttons = new JButton[9];
     boolean firstPlayerTurn;
 
-    /**
-     * Constructor that sets up the Tic Tac Toe game board.
-     */
-    TicTacToe() {
+    TicTacToe(){
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800,800);
         frame.getContentPane().setBackground(new Color(25, 15,15));
@@ -108,7 +102,7 @@ public class TicTacToe implements ActionListener {
                     }
                 }
 
-                }
+            }
         }
         boolean allButtonsFilled = true;
         for (JButton button : buttons) {
@@ -218,18 +212,6 @@ public class TicTacToe implements ActionListener {
         text.setBackground(new Color(31, 255, 0));
 
         for(int i=0; i < 9; i++) {
-    /**
-     * Indicates a win for player X and updates the UI accordingly.
-     *
-     * @param x index of the first button in the winning combination
-     * @param y index of the second button in the winning combination
-     * @param z index of the third button in the winning combination
-     */
-    public void winx(int x, int y, int z) {
-        buttons[x].setBackground(Color.GREEN);
-        buttons[y].setBackground(Color.GREEN);
-        buttons[z].setBackground(Color.GREEN);
-        for (int i = 0; i < 9; i++) {
             buttons[i].setEnabled(false);
         }
         text.setText("X wins");
@@ -242,18 +224,6 @@ public class TicTacToe implements ActionListener {
         text.setBackground(new Color(13, 255, 0));
 
         for(int i=0; i < 9; i++) {
-    /**
-     * Indicates a win for player O and updates the UI accordingly.
-     *
-     * @param x index of the first button in the winning combination
-     * @param y index of the second button in the winning combination
-     * @param z index of the third button in the winning combination
-     */
-    public void wino(int x, int y, int z) {
-        buttons[x].setBackground(Color.GREEN);
-        buttons[y].setBackground(Color.GREEN);
-        buttons[z].setBackground(Color.GREEN);
-        for (int i = 0; i < 9; i++) {
             buttons[i].setEnabled(false);
         }
         text.setText("O wins");
