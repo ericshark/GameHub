@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.util.Random;
 
 /**
- * The {@code TicTacToe} class represents the game logic and user interface for a Tic-Tac-Toe game.
+ * The {@code TicTacToe} class represents the game logic and user interface for a TicTacToe game.
  * It manages the game state, player turns, and interaction through the graphical user interface.
  */
 public class TicTacToe implements ActionListener {

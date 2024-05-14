@@ -3,6 +3,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * The {@code MiniTic} class creates a mini TicTacToe game for the TicTacToe class
+ */
 public class MiniTic extends JDialog {
     private JButton[] buttons = new JButton[9];
     private boolean firstPlayerTurn = true; // Assuming X starts
@@ -10,7 +13,6 @@ public class MiniTic extends JDialog {
 
     /**
      * Constructs a MiniTic dialog which is modal and centered relative to its owner.
-     *
      * @param owner The frame from which the dialog is displayed and blocked.
      */
     public MiniTic(JFrame owner) {
@@ -52,7 +54,9 @@ public class MiniTic extends JDialog {
             add(buttons[i]);
         }
     }
-
+    /**
+     * Returns the winner of the game.
+     */
     private void checkGameStatus() {
         int result = checkWin();
         if (result != 0) { // There is a winner or a tie
