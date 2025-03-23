@@ -1,8 +1,6 @@
 # Game Hub 🎮
 
-<p align="center">
-  <img src="https://via.placeholder.com/150?text=Game+Hub" alt="Game Hub Logo" />
-</p>
+
 
 <p align="center">A fun and interactive gaming platform built with Java. Game Hub offers a sleek main menu to launch classic games like Snake and Ultimate Tic Tac Toe, providing hours of entertainment for players of all ages.</p>
 
@@ -38,10 +36,6 @@ Challenge yourself with Ultimate Tic Tac Toe, a strategic twist on the classic g
 
 
 
-## 🤝 Collaborators
 
-*(No collaborator information provided. Add GitHub links here if applicable.)*
-
----
 
 Dive into classic gaming with Game Hub! Whether you're slithering through Snake or strategizing in Ultimate Tic Tac Toe, this platform brings fun and nostalgia to your fingertips.
